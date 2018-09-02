@@ -1,0 +1,188 @@
+#navigation{
+    background-color: #ffffff !important;
+}
+
+/*this is the actual nav tag with a little border to separate the buttons*/
+#navbarNav{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 70px;
+}  
+
+a{
+    color: #777777;
+    text-decoration: none;
+}
+        
+.pipe{
+    font-size: 22px;
+    color: #777777;
+    font-weight: lighter;
+}
+
+/*holds format for all the titles*/
+h1{
+    font-size: 3em;
+    position: relative;
+    color:#4aaaa5;
+    top: 5px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+
+/*This is the div tag that holds my name in the teal color box, the size of the box to fit in the header height and be align with the container*/
+#name{
+    background-color: #4aaaa5;
+    text-align:center;
+    width:20%;
+}
+
+a.index{
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:white;
+    margin:0 auto;
+    font-size: 35px;
+}
+
+
+/*The body of this page will have a background image and then a container will appear*/
+body{
+    background-image: url("../images/gravel.png");
+}
+
+/*This is the container for the main information of the page*/
+.container{
+    overflow: hidden;
+    border: solid 1px;
+    border-color: #dddddd;
+    background-color: #ffffff;
+    clear:both;
+    padding:30px;
+}
+
+/*This belong to the portfolio page*/
+#PortfolioTitle{
+    color:#4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    float: left;
+}
+/*this hold the division on the container for the "About me" and the format*/
+#me{
+    color:#4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    float: left;
+}
+
+/*hr is the line that divides the title from the image and the text*/
+hr{
+    border-color:#cccccc;
+    background-color: #cccccc;
+    height: 1px;
+}
+
+p{
+    margin-right:1rem;
+}
+
+/*this are the portfolio page image links class*/
+.ports{
+    width:300px;
+    height:200px;
+}    
+
+
+/*this is the text in the image links of the portfolio page*/
+.Portfolio{
+    position: relative;
+    bottom:-150px;
+    width: 280px; 
+    height:30px;
+    background-color:#4aaaa5;
+}
+
+.row{
+    margin:30px;
+}
+/*text inside the divs in the photos*/
+.portp{
+    color:#ffffff;
+    position:relative;
+    bottom: 190px;
+    text-align:center;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/*This holds the image floating left*/
+img{
+    float: left;
+}
+
+/*This division holds the text and float it right*/
+#about{
+    float:right;
+    width: 690px;
+    color:#777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    color:#777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formbox{
+    width:900px;
+}
+
+#message{
+    width:900px;
+    resize: none;
+}
+
+/*this is the footer, its format, color and absolute position to the bottom*/
+footer{
+    background-color: #777777;
+    color:#ffffff;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    border-top: 10px solid #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footerPort{
+    position:relative;
+}
+
+/*el tamaño de la letra del footer*/
+#quote{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px){
+
+.name{
+    width:50%;
+}
+
+footer{
+    position:relative;
+}
+
+#contactFoot{
+    position:absolute;
+}
+}
+
+@media only screen and (max-width: 640px){
+    footer{
+        position:relative;
+    }
+    }
