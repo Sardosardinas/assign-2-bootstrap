@@ -6,60 +6,65 @@
 
     <!--Here I put the head so I can link the stylesheet-->
     <head>
-        <meta charset="utf-8" />
-        <title>Alix Reyna Curriculum</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Alix Reyna Curriculum</title>
+       
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     </head>
-    
-    <body class="text-center">
-        
-       <!-- This navbar was really difficult, some of the aesthetics are within the next code-->
-       <nav class="navbar navbar-expand-lg" id="navbarNav" style="background-color: whitesmoke;">
-          <div id="nameDiv" class="container">
-              <a class="index" id="aName" href="index.html">Alix Reyna</a>
-          </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portafolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-     
-        <div class="container" id="main">
-            <!-- Content here -->
-            <h1>About me</h1>
-            <hr noshade>
-
-            <div class="container">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="assets/images/profile.jpg" class="img-thumbnail rounded float-left" alt="Profile">
-                  </div>
-                  <div class="col-md-9">
-                    <p class="text-justify">I love taking care of incredible teams! My background in communications sciences combined with my early experience in the LATAM Esports scene led me to develop a listen-first approach that I have applied as Office Coordinator at Riot Games in Mexico City, where our team’s commitment to excellence earned our office the #2 spot in 2017’s list of Great Place to Work. I am proud of what we’ve accomplished, and I want to continue testing myself with inspiring teams that challenge me to deliver awesome every day. </p>
-                    <br>
-                    <p class="text-justify">Right now I'm learning how to be a developer, because I want to be able to look at problems as a developer and offer another point of view for Operational teams to bring better tools to their services within the gaming industry</p>
-                  </div>
-                </div>
+    <header class="masthead mb-auto">
+      <div class="inner">
+          <h3 class="masthead-brand" id="aName"><a href="index.html">Alix Reyna</a></h3>
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+              <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Porfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
               </div>
+            </nav>
+      </div>
+    </header>
+
+    <body class="text-center">
+        <div class="container" id="main">
+          <!-- Content here -->
+          <h1>About me</h1>
+          <hr noshade>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="assets/images/profile.jpg" class="img-thumbnail rounded float-left" alt="Profile">
+              </div>
+            <div class="col-md-9">
+              <p class="text-justify">I love taking care of incredible teams! My background in communications sciences combined with my early experience in the LATAM Esports scene led me to develop a listen-first approach that I have applied as Office Coordinator at Riot Games in Mexico City, where our team’s commitment to excellence earned our office the #2 spot in 2017’s list of Great Place to Work. I am proud of what we’ve accomplished, and I want to continue testing myself with inspiring teams that challenge me to deliver awesome every day. </p>
+              <br>
+              <p class="text-justify">Right now I'm learning how to be a developer, because I want to be able to look at problems as a developer and offer another point of view for Operational teams to bring better tools to their services within the gaming industry</p>
             </div>
           </div>
-       
-    </body>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+  </body>
     <footer class="mastfoot mt-auto">
       <div class="inner">
           <p><a href="https://twitter.com/Sardosardina" target="_blank" ><i class="fab fa-twitter"></i></a> | <a href="https://www.linkedin.com/in/alix-reyna-flores-744a6095/" target="_blank" ><i class="fab fa-linkedin-in"></i></a></p>

@@ -6,70 +6,72 @@
 
     <!--Here I put the head so I can link the stylesheet-->
     <head>
-        <meta charset="utf-8" />
-        <title>Alix Reyna Curriculum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alix Reyna Contact</title>
+        
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     </head>
-    
-    <body>
-      <!-- This navbar was really difficult, some of the aesthetics are within the next code-->
-      <nav id="navigation" class="navbar navbar-expand-sm mb-5 p-0">
-         
-        <div id="name" class="container ml-5">
-          <a class="index" href="index.html">Alix Reyna</a>
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand" id="aName"><a href="index.html">Alix Reyna</a></h3>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Porfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </div>
-          
-        <button id="navList" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul id="list" class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-            </li>
-            <div class="pipe">|</div>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <div class="pipe">|</div>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>    
-         
-     </nav>
+      </header>
+
+
+    <body class="text-center">
 
       <div class="container">
         <!-- Content here -->
         <h1>Contact</h1>
         <hr noshade>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="cv">Download my CV</h3>
 
-        <form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <a href="assets/images/ResumeQ2.pdf" target="_blank" download><img src="assets/images/cvDownload.jpg" class="rounded mx-auto d-block" id="cv-img"></a>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email </label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
+         <div class="row">
+          <div class="col-md-12">
+            <h3 class="cover-heading">Emails are also an option</h3>
+              
+            <a href="mailto:alixreynaflo@gmail.com?Subject=Hello%20again" style="color: #8f8977;" target="_top">Email link here</a>
+          </div>    
+            
+        </div>
+        
+        
       </div>
     </body>
-    <footer id="contactFoot">
-      <div class="card-body">
-        <blockquote id="quote" class="blockquote">
-          <p class="text-center">If you have any comments or concerns feel free to contact me.</p>
-        </blockquote>
-      </div>
-    
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p><a href="https://twitter.com/Sardosardina" target="_blank" ><i class="fab fa-twitter"></i></a> | <a href="https://www.linkedin.com/in/alix-reyna-flores-744a6095/" target="_blank" ><i class="fab fa-linkedin-in"></i></a></p>
+        </div>
     </footer>
 </html>

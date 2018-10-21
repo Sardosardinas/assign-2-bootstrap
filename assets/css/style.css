@@ -4,6 +4,11 @@
 html{
     height: 100%;
 }
+
+header{
+    background-color: whitesmoke;
+}
+
 #aName{
     font-family: 'Lobster', cursive;
     font-size: 40px;
@@ -11,14 +16,16 @@ html{
     margin:0 auto;
 }
 
-#nameDiv{
-    background-color: whitesmoke;
-    height: 30px;
-    width: 300px;
+#cv{
+    font-family: 'Lobster', cursive;
+    color: #8f8977;
+    margin:0 auto;
 }
+
 /*this is the actual nav tag with a little border to separate the buttons*/
 #navbarNav{
     font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
 }  
 
 a{
@@ -59,7 +66,6 @@ body{
 
 /*This is the container for the main information of the page*/
 .container{
-    overflow: hidden;
     background-color: #d7dfd2;
     clear:both;
     padding:30px;
@@ -113,17 +119,9 @@ p{
     background-color:#4aaaa5;
 }
 
-.row{
-    margin:30px;
-}
-/*text inside the divs in the photos*/
-.portp{
-    color:#ffffff;
-    position:relative;
-    bottom: 190px;
-    text-align:center;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: 18px;
+
+.carousel-inner{
+    height: 350px;
 }
 
 /*This holds the image floating left*/
@@ -139,19 +137,13 @@ img{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form{
-    color:#777777;
-    font-family: Arial, Helvetica, sans-serif;
+#cv-img{
+    width:200px;
+    height: 200px;
 }
 
-.formbox{
-    width:900px;
-}
 
-#message{
-    width:900px;
-    resize: none;
-}
+
 
 /*this is the footer, its format, color and absolute position to the bottom*/
 
@@ -169,23 +161,10 @@ form{
 .mastfoot{
     align-content: center;
 }
-/*@media only screen and (max-width: 768px){
 
-.name{
-    width:50%;
-}
-
-footer{
-    position:relative;
-}
-
-#contactFoot{
-    position:absolute;
-}
-}
-
-@media only screen and (max-width: 640px){
-    footer{
-        position:relative;
+@media only screen and (min-width : 400px) {
+    .carousel-caption
+    {
+      top: 46%;
     }
-    }*/
+  }

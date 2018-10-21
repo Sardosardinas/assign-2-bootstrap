@@ -6,92 +6,94 @@
 
     <!--Here I put the head so I can link the stylesheet-->
     <head>
-        <meta charset="utf-8" />
-        <title>Alix Reyna Curriculum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alix Reyna Portfolio</title>
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     </head>
 
-    <body>
-      <!-- This navbar was really difficult, some of the aesthetics are within the next code-->
-      <nav class="navbar navbar-expand-lg" id="navbarNav" style="background-color: whitesmoke;">
-          <div id="nameDiv" class="container">
-              <a class="index" id="aName" href="index.html">Alix Reyna</a>
-          </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portafolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand" id="aName"><a href="index.html">Alix Reyna</a></h3>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Porfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </div>
-      </nav>
+      </header>
+    
+    <body class="text-center">
       
       <div class="container">
         <!-- Content here -->
          <h1>Portfolio</h1>
         <hr noshade>
       
-        <!-- First Row-->
-        <div class="row">
-          <div class="col-md-6 col-sm-1">
-            <a class="ports" href="#">
-              <img src="assets/images/port2.jpg" class="img-thumbnail">
-              <div class="Portfolio"><a href="https://sardosardinas.github.io/wordguessgame/" class="portp">Hangman Game</a></div>
-            
-          </div>
-          <div class="col-md-6 col-sm-1">
-            <a class="ports" href="#">
-              <img src="assets/images/port2.jpg" class="img-thumbnail">
-                <div class="Portfolio"><a href="https://sardosardinas.github.io/unit-4-game/" class="portp">Crystal Gems</a></div>
-          </div>
-        </div>
-
-        <!--Second Row-->
-        <div class="row">
-          <div class="col-md-6 col-sm-1">
-            <a class="ports" href="#">
-              <img src="assets/images/port3.jpg" class="img-thumbnail">
-              <div class="Portfolio"><a href="https://sardosardinas.github.io/TriviaGame/" class="portp">Trivia Game</a></div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://felixruano91.github.io/Auxilium/" target="_blank"><img class="d-block w-100" src="assets/images/galaxy3.jpg" alt="First slide"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Auxilium</h4>
+                    <p>Helping people with anxiety attacks</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://sardosardinas.github.io/trainHomework/" target="_blank"><img class="d-block w-100" src="assets/images/train.jpg" alt="Second slide"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Tracking Train</h4>
+                    <p>Using Databases on real time</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://sardosardinas.github.io/unit-4-game/" target="_blank"><img class="d-block w-100" src="assets/images/crystal.png" alt="Third slide"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Crystal Game</h4>
+                    <p>Jquery usage for a fun game!</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="col-md-6 col-sm-1">
-            <a class="ports" href="#">
-              <img src="assets/images/port4.jpg" class="img-thumbnail">
-                <div class="Portfolio"><a href="https://sardosardinas.github.io/giphyhomework/" class="portp">GIF generator</a></div>
-            </a>
-          </div>
-        </div>
+    </div> 
 
-        <!--Third Row-->
-        <div class="row">
-          <div class="col-md-6 col-sm-1">
-            <a class="ports" href="#">
-              <img src="assets/images/port3.jpg" class="img-thumbnail">
-              <div class="Portfolio"><a href="https://sardosardinas.github.io/trainHomework/" class="portp">Train Tracker</a></div>
-            </a>
-          </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p><a href="https://twitter.com/Sardosardina" target="_blank" ><i class="fab fa-twitter"></i></a> | <a href="https://www.linkedin.com/in/alix-reyna-flores-744a6095/" target="_blank" ><i class="fab fa-linkedin-in"></i></a></p>
         </div>
-
-      </div> 
-      
-    </body>
-    <footer id="footerPort">
-        <div class="card-body">
-          <blockquote id="quote" class="blockquote">
-            <p class="text-center">If you have any comments or concerns feel free to contact me.</p>
-          </blockquote>
-        </div> 
     </footer>
     
   </html>
